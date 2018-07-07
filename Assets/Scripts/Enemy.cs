@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
 	private int health;
 	private int pointValue;
 	private Vector3 moveDirection = new Vector3(0.05f, 0, 0);
-	[SerializeField] private ScoreBoard scoreBoard;
+	//[SerializeField] private ScoreBoard scoreBoard;
 
 	public int Score
 	{
@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 	void Start ()
 	{
 		health = 3;
-		pointValue = 12;
+		pointValue = 10;
 	}
 	
 	// Update is called once per frame
@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
 
 	private void Die()
 	{
-		scoreBoard.IncreaseScore(pointValue);
+		Main.Singleton.IncreaseScore(pointValue);
 		Destroy(gameObject);
 	}
 

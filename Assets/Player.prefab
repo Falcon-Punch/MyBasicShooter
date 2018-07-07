@@ -98,8 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 114883543931297228, guid: 3ced500bbfe3450419d1c9686781407f,
     type: 2}
-  enemyPrefab: {fileID: 0}
-  board: {fileID: 0}
 --- !u!136 &136553848194884166
 CapsuleCollider:
   m_ObjectHideFlags: 1
