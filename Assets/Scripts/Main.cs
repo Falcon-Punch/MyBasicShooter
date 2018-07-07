@@ -25,7 +25,7 @@ public class Main : MonoBehaviour
 	private void SpawnEnemy()
 	{
 		Enemy enemy = Instantiate(enemyPrefab);
-
+		enemy.GetComponent<MeshRenderer>().material.SetColor("_Color", Random.ColorHSV());
 	}
 
 	public void IncreaseScore(int amount)
